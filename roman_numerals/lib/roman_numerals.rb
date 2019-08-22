@@ -12,14 +12,7 @@ VALUES = [
 
 def roman_numeral_converter n
 
-  roman = ""
 
-  VALUES.each do |pair|
-    letter = pair[0]
-    value = pair[1]
-    roman += letter*(n / value)
-    n = n % value
-  end
 
   return roman
 
